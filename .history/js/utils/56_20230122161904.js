@@ -1,0 +1,1 @@
+// 1、实现原生AJAXfeng'zhuang
