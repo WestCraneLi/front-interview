@@ -150,3 +150,12 @@ function curring(fn, ...args) {
 // 11、LRU算法
 
 // 12、发布订阅算法
+
+// 13、dom转对象
+function domTotree(node) {
+  const obj = {}
+  obj.tag = node.tagName
+  obj.children = []
+  node.childNodes.forEach(child => obj.children.push(domTotree(child)))
+  return obj
+}
